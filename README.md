@@ -8,8 +8,13 @@ The goal of this is to make `environment.yml` files more platform-agnostic.
 ## Requirements
 A `conda` executable.
 
+## Installation
+```bash
+  pip install git+https://github.com/thedataincubator/conda_minifier.git@master
+```
+
 ## Usage
 ```
-  python dep_minifier.py path_to_environment.yml > minified_environment.yml
+  python -m conda_minifier path_to_environment.yml > minified_environment.yml
 ```
 
