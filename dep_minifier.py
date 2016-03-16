@@ -1,6 +1,5 @@
 import subprocess
 import sys
-
 import yaml
 
 
@@ -80,6 +79,7 @@ def main():
   deps = find_all_deps(packages)
   source_packages = calc_difference(packages, deps)
   output_env(name, source_packages)
+
 
 if __name__ == "__main__":
   main()
